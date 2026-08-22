@@ -15,4 +15,3 @@ class Solution:
                 output += 1
 
         return output
-        return ouptut
