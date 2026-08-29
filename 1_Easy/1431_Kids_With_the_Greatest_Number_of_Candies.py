@@ -8,9 +8,10 @@ Difficulty: Easy
 class Solution:
     def kidsWithCandies(self, candies: List[int], extraCandies: int) -> List[bool]:
         output = list()
+        maxCandies = max(candies)
 
         for candy in candies:
-            if candy + extraCandies >= max(candies):
+            if candy + extraCandies >= maxCandies:
                 output.append(True)
             else:
                 output.append(False) 
