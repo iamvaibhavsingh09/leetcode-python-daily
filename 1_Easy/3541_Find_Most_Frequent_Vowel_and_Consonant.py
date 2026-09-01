@@ -24,14 +24,8 @@ class Solution:
                     consonantDict[var] = newVar + 1
                 else:
                     consonantDict[var] = 1
+        
+        max_vowel = max(vowelDict.values(), default=0)
+        max_consonant = max(consonantDict.values(), default=0)
 
-        if consonantDict and vowelDict:
-            output = max(vowelDict.values()) + max(consonantDict.values())
-        elif vowelDict:
-            output = max(vowelDict.values())
-        elif consonantDict:
-            output = max(consonantDict.values())
-        else:
-            output = max(vowelDict.values()) + max(consonantDict.values())
-
-        return output
+        return max_vowel + max_consonant
