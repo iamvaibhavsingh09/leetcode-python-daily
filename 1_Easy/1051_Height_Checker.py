@@ -13,6 +13,5 @@ class Solution:
         for i in range(len(heights)):
             if heights[i] != expected[i]:
                 output += 1
-
-        return output
+                
         return output
